@@ -5,8 +5,9 @@ class Hero:
         self.ataque = ataque
         self.velocidade = velocidade
 
-    def atacar(self):
-        print('Atacando com a espeda')
+    def atacar(self, enemy):
+        print('Atacando com a espada')
+        enemy.vida = enemy.vida - self.ataque
 
     def correr(self):
         print('Correndo rápido')

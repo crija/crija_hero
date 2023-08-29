@@ -7,13 +7,14 @@ class Enemy:
         self.tipo_poder = tipo_poder
         self.velocidade = velocidade
 
-    def atacar():
+    def atacar(self, entity):
         print('Atacando')
+        entity.vida = entity.vida - self.ataque
 
-    def correr():
+    def correr(self, ):
         print('Correndo')
 
-    def perseguir():
+    def perseguir(self, entity):
         print('Perseguindo')
 
 
